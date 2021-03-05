@@ -1,0 +1,25 @@
+.single-product{
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+}
+.product-image-part{
+   margin-right: 10px;
+}
+.product-written-part{
+    margin-left: 10px;
+}
+.product-written-part h4{
+    color: blue;
+    font-size: 18px;
+    font-weight: 400;
+}
+.main-button{
+    background-color: goldenrod;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
