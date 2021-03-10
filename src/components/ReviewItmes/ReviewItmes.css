@@ -1,0 +1,5 @@
+.main-div{
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding:5px;
+}

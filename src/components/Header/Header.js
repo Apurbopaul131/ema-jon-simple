@@ -5,14 +5,14 @@ import './Header.css';
 const Header = () => {
     return (
         <div className="header">
-            <img src={logo} alt=""/>
+            <img src={logo} alt="" />
             <nav>
                 <a href="/shop" id="first-anchor">shop</a>
                 <a href="/review">Review</a>
-                <a href="/manage">Mange Inventory</a>
+                <a href="/inventory">Mange Inventory</a>
             </nav>
-               
-                  
+
+
         </div>
     );
 };

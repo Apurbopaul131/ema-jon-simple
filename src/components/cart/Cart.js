@@ -1,13 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Review from '../Review/Review';
 import Product from '../Shop/Product';
 
 const Cart = (props) => {
+ 
     const cart = props.cart;
+    // console.log(cart);
     let total= 0;
     for(let i=0;i<cart.length;i++)
     {
        let product = cart[i];
-        total = total + product.price; 
+        total = total + product.price * product.quantity; 
+        debugger;
     }
     let shipping = 0;
     if(total > 35)
@@ -34,6 +39,10 @@ const Cart = (props) => {
             <p>VAT: <small>{handleDecimal(tax)}</small></p>
             <p> Shipping cost: <small>{shipping}</small></p>
             <p>Total:<b>${handleDecimal(grandtotal)}</b></p>
+           {
+               props.children
+           }
+           
            
         </div>
     );
